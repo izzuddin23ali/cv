@@ -1,0 +1,14 @@
+{
+    "schools": [
+        {
+            "name": "Chung Hua",
+            "year": "2002",
+            "class": "Pre-school"
+        },
+        {
+            "name": "Sekolah Rendah Dato Marsal",
+            "year": "2003 - 2008",
+            "class": "Primary School"
+        }
+    ]
+}

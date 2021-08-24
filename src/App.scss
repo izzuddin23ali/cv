@@ -1,0 +1,30 @@
+#hero{
+    text-align: center;
+}
+
+#nav button{
+    text-align: center;
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+    #hero{
+        margin: 2vh 0;
+        height: 4vh;
+        width: 100%;
+    }
+
+    #nav{
+        height: 4vh;
+        margin: 3vh 0;
+    }
+
+    #nav button{
+        font-size: smaller;
+    }
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    font-style: none;
+}

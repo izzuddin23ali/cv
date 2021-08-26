@@ -1,8 +1,14 @@
-const Experience = () => {
+import Card from "./Card"
+
+const Experience = ( {data}) => {
     return(
         <>
 
-            <p>This is the experience tab</p>
+            {data.jobs.map((job) => (
+
+                <Card key = {job.id} data = {job} />
+
+            ))}
             
         </>
     )

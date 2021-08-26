@@ -1,26 +1,82 @@
+$blue: #3772ff;
+$orange: #ffa630;
+
+#header{
+    background-color: $orange;
+}
+
 #hero{
     text-align: center;
 }
 
 #nav button{
     text-align: center;
+    background-color: $blue;
+    color: white;
 }
 
+#nav button .active{
+    background-color: white;
+    color: $blue;
+}
+
+.card{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px;
+}
+
+.card .thumbnail{
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card h5, .card h6{
+    text-align: left;
+}
+
+.card h6{
+    font-style:normal;
+}
+
+.card p{
+    text-align: justify;
+}
+
+/*mobile phone*/
+
 @media(min-width: 320px) and (max-width: 480px){
+    #header{
+        height: 15vh;
+    }
+
     #hero{
-        margin: 2vh 0;
-        height: 4vh;
+        margin: 2.5vh 0;
+        height: 5vh;
         width: 100%;
     }
 
     #nav{
         height: 4vh;
-        margin: 3vh 0;
+        margin-bottom: 1vh;
     }
 
     #nav button{
         font-size: smaller;
     }
+
+    #content{
+        height: 65vh;
+        overflow: scroll;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
 }
 
 button{

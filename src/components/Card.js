@@ -1,5 +1,4 @@
-const Card = ( data ) => {
-    console.log(data.data.id);
+const Card = ( {data} ) => {
     return(
         <>
 
@@ -7,11 +6,11 @@ const Card = ( data ) => {
 
                 <div className="row">
 
-                    <div className="thumbnail col-12" style={{ backgroundImage: "url(" + data.image_url + ")"}}>
+                    <div className="thumbnail col-10 mx-auto" style={{ backgroundImage: "url(" + data.image_url + ")"}}>
 
                     </div>
 
-                    <div className="title col-10 offset-1 text-center">
+                    <div className="title col-11 mx-auto text-center">
 
                         <h5>{data.name}</h5>
 
@@ -19,9 +18,11 @@ const Card = ( data ) => {
 
                         <h6>{data.position}</h6>
 
+                        <h6>{data.year}</h6>
+
                     </div>
 
-                    <div className="description col-10 offset-1 text-jusitfy">
+                    <div className="description col-11 mx-auto text-jusitfy">
 
                         <p>{data.info}</p>
 

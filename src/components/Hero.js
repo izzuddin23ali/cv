@@ -1,9 +1,9 @@
-const Hero = (nocat) => {
+const Hero = ({bioToggle}) => {
     return(
 
         <>
 
-            <div onClick={nocat} className="row" id="hero">
+            <div onClick={bioToggle} className="row" id="hero">
 
                 <div className="col-12">
 

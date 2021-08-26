@@ -1,20 +1,14 @@
 import './App.css';
 import {useState} from "react"
-import Button from "./components/Button";
+import Nav from "./components/Nav";
 import Bio from "./components/Bio";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
 import Hero from "./components/Hero";
 import {eduData} from "./Edu";
-import Data from "./Data";
-import EduTemp from "./components/EduTemp";
 
 function App() {
-
-  const [schools, setSchools] = useState([]);
-
-  const [loading, setLoading] = useState(true);
 
   const [edu, setEducation] = useState(false);
 
@@ -24,8 +18,7 @@ function App() {
 
   const [noC, setCat] = useState(true);
 
-  const education = () => {
-    setSchools(eduData.data);
+  const eduToggle = () => {
     setEducation(true);
     setExperience(false);
     setProject(false);
@@ -33,7 +26,7 @@ function App() {
     console.log(edu);
   }
 
-  const experience = () => {
+  const expToggle = () => {
     setExperience(true);
     setEducation(false);
     setProject(false);
@@ -41,7 +34,7 @@ function App() {
     console.log(exp);
   }
 
-  const project = () => {
+  const projectToggle = () => {
     setProject(true);
     setExperience(false);
     setEducation(false);
@@ -49,22 +42,36 @@ function App() {
     console.log(pro);
   }
 
-  const nocat = () => {
+  const bioToggle = () => {
     setProject(false);
     setExperience(false);
     setEducation(false);
     setCat(true);
   }
 
+  const [viewMore, setView] = useState(false);
+
+  const viewToggle = () => {
+    setView(true);
+  }
+
   return (
 
     <div className="container">
 
-      <Hero nocat = {nocat} />
+      <div className="row" id="header">
 
-      <Button education = {education} experience = {experience} project = {project}/>
+        <div className="col-12">
 
-      <div className="row">
+          <Hero bioToggle = {bioToggle} />
+
+          <Nav eduToggle = {eduToggle} expToggle = {expToggle} projectToggle = {projectToggle} edu={edu} exp = {exp} pro = {pro}/>
+
+        </div>
+
+      </div>
+
+      <div className="row" id="content">
 
         <div className="col-12">
 
@@ -72,8 +79,7 @@ function App() {
 
           {edu && <Education eduData = {eduData} />}
 
-
-          {exp && <Experience />}
+          {exp && <Experience data = {eduData}/>}
 
           {pro && <Project />}
 

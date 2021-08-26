@@ -1,14 +1,12 @@
 import Card from "./Card"
 
-const Education = ( eduData ) => {
-
-    console.log(eduData.eduData.schools);
+const Education = ({ eduData }) => {
 
     return(
             
         <>
 
-            {eduData.eduData.schools.map((school) => (
+            {eduData.schools.map((school) => (
 
                 <Card key = {school.id} data = {school} />
 

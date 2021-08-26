@@ -1,12 +1,12 @@
 import Card from "./Card"
 
-const Education = ({ eduData }) => {
+const Education = ({ data }) => {
 
     return(
             
         <>
 
-            {eduData.schools.map((school) => (
+            {data.schools.map((school) => (
 
                 <Card key = {school.id} data = {school} />
 

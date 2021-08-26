@@ -1,28 +1,36 @@
 #header {
   background-color: #ffa630;
+  height: 8vh;
 }
 
 #hero {
   text-align: center;
 }
 
+#portrait img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 #nav button {
   text-align: center;
   background-color: #3772ff;
   color: white;
+  height: 4vh;
+  margin-top: 2vh;
 }
 
-#nav button .active {
-  background-color: white;
-  color: #3772ff;
+#nav button.active {
+  background-color: #3772ff;
+  color: #ffa630;
 }
 
 .card {
   margin: 10px 0;
   padding: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px;
-          box-shadow: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .card .thumbnail {
@@ -30,6 +38,7 @@
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -49,22 +58,21 @@
 /*mobile phone*/
 @media (min-width: 320px) and (max-width: 480px) {
   #header {
-    height: 15vh;
+    height: 12vh;
   }
   #hero {
-    margin: 2.5vh 0;
-    height: 5vh;
-    width: 100%;
+    text-align: center;
   }
-  #nav {
-    height: 4vh;
-    margin-bottom: 1vh;
+  #nav button {
+    height: 3.5vh;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
   }
   #nav button {
     font-size: smaller;
   }
   #content {
-    height: 65vh;
+    height: 88vh;
     overflow: scroll;
     border-bottom: 1px solid black;
     border-top: 1px solid black;

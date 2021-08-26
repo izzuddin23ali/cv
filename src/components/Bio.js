@@ -2,13 +2,15 @@ const Bio = () => {
     return(
 
         <>
-            <div className="row mt-2">
+            <div className="row mt-2 justify-content-between">
 
-                <div className="col-md-3" id="portrait">
+                <div className="col-md-4" id="portrait">
+
+                    <img src="images/yak.png" alt="yak" />
 
                 </div>
 
-                <div className="col-md-9">
+                <div className="col-md-8">
 
                     <h3>About myself</h3>
 

@@ -1,8 +1,14 @@
-const Project = () => {
+import Card from "./Card";
+
+const Project = ({data}) => {
     return(
         <>
 
-            <p>This is the project tab.</p>
+            {data.projects.map((project) => (
+
+                <Card key = {project.id} data = {project} />
+
+            ))}
 
         </>
     )

@@ -1,12 +1,11 @@
 import './App.css';
 import {useState} from "react"
-import Nav from "./components/Nav";
 import Bio from "./components/Bio";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
-import Hero from "./components/Hero";
-import {eduData} from "./Edu";
+import {allData} from "./allData";
+import Navigation from "./components/Navigation";
 
 function App() {
 
@@ -57,31 +56,21 @@ function App() {
 
   return (
 
-    <div className="container">
+    <div className="container-fluid">
 
-      <div className="row" id="header">
-
-        <div className="col-12">
-
-          <Hero bioToggle = {bioToggle} />
-
-          <Nav eduToggle = {eduToggle} expToggle = {expToggle} projectToggle = {projectToggle} edu={edu} exp = {exp} pro = {pro}/>
-
-        </div>
-
-      </div>
+      <Navigation bioToggle = {bioToggle} eduToggle = {eduToggle} expToggle = {expToggle} projectToggle = {projectToggle} />
 
       <div className="row" id="content">
 
-        <div className="col-12">
+        <div className="col-12 col-md-8 mx-auto">
 
           {noC && <Bio />}
 
-          {edu && <Education eduData = {eduData} />}
+          {edu && <Education data = {allData} />}
 
-          {exp && <Experience data = {eduData}/>}
+          {exp && <Experience data = {allData}/>}
 
-          {pro && <Project />}
+          {pro && <Project data = {allData}/>}
 
         </div>
 

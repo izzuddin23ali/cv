@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Project from "./components/Project";
 import {allData} from "./allData";
 import Navigation from "./components/Navigation";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -17,12 +18,16 @@ function App() {
 
   const [noC, setCat] = useState(true);
 
+  const [cont, setContact] = useState(false);
+
+  const [shownCard, setCard] = useState(99);
+
   const eduToggle = () => {
     setEducation(true);
     setExperience(false);
     setProject(false);
     setCat(false);
-    console.log(edu);
+    setContact(false);
   }
 
   const expToggle = () => {
@@ -30,7 +35,7 @@ function App() {
     setEducation(false);
     setProject(false);
     setCat(false);
-    console.log(exp);
+    setContact(false);
   }
 
   const projectToggle = () => {
@@ -38,7 +43,7 @@ function App() {
     setExperience(false);
     setEducation(false);
     setCat(false);
-    console.log(pro);
+    setContact(false);
   }
 
   const bioToggle = () => {
@@ -46,6 +51,15 @@ function App() {
     setExperience(false);
     setEducation(false);
     setCat(true);
+    setContact(false);
+  }
+
+  const contactToggle = () => {
+    setProject(false);
+    setExperience(false);
+    setEducation(false);
+    setCat(false);
+    setContact(true);
   }
 
   const [viewMore, setView] = useState(false);
@@ -58,7 +72,7 @@ function App() {
 
     <div className="container-fluid">
 
-      <Navigation bioToggle = {bioToggle} eduToggle = {eduToggle} expToggle = {expToggle} projectToggle = {projectToggle} />
+      <Navigation bioToggle = {bioToggle} eduToggle = {eduToggle} expToggle = {expToggle} projectToggle = {projectToggle} contactToggle = {contactToggle}/>
 
       <div className="row" id="content">
 
@@ -71,6 +85,8 @@ function App() {
           {exp && <Experience data = {allData}/>}
 
           {pro && <Project data = {allData}/>}
+
+          {cont && <Contact />}
 
         </div>
 

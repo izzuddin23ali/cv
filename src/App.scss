@@ -6,10 +6,20 @@ $orange: #ffa630;
     height: 8vh;
 }
 
+#hero{
+    height: 8vh;
+}
+
+#hero:hover{
+    cursor: pointer;
+}
+
 #portrait img{
     width: 100%;
     height: auto;
     overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #nav button{
@@ -25,7 +35,8 @@ $orange: #ffa630;
     color: $orange;
 }
 
-.card{
+.card,
+#bioCard{
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
@@ -63,6 +74,7 @@ $orange: #ffa630;
 
     #hero{
         text-align: center;
+        height: 6vh;
     }
 
     #nav button{
@@ -88,4 +100,33 @@ button{
     border-radius: 10px;
     border: none;
     font-style: none;
+}
+
+.bioTable,
+.bioTable tr{
+    width: 100%;
+}
+
+.bioList label,
+.bioList progress,
+.bioTable th,
+.bioTable td{
+    width: 50%;
+}
+
+.bioList{
+    list-style: none;
+    padding: 0;
+}
+
+#bigNav{
+    height: 100%;
+}
+
+#bigNav .clickable:hover{
+    background-color: $blue;
+}
+
+.clickable:hover{
+    cursor: pointer;
 }

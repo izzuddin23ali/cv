@@ -1,96 +1,87 @@
+import Skills from "./Skills";
+import Biodata from "./Biodata";
+import {useState} from "react";
+
 const Bio = () => {
+
+    const [biodata, setBio] = useState(true);
+
+    const [skills, setSkills] = useState(false);
+
+    const bioActive = () => {
+        setBio(true);
+        setSkills(false);
+    }
+
+    const skillsActive = () => {
+        setSkills(true);
+        setBio(false);
+    }
+
     return(
 
         <>
-            <div className="row mt-2 justify-content-between">
+            <div className="row mt-2 justify-content-between mb-2 md-md-5">
 
                 <div className="col-md-4" id="portrait">
 
-                    <img src="images/yak.png" alt="yak" />
+                    <img className="mx-auto" src="images/yak.png" alt="yak" />
 
                 </div>
 
-                <div className="col-md-8">
+                <div className="col-md-8 d-flex align-items-center">
 
-                    <h3>About myself</h3>
+                    <article>
 
-                    <p>Hello and welcome to my website. If you are looking at this website on your computer then you might seeit as scuffed af because I only develop it for mobile view only asof now. I am still trying to figure out react framework and subsequently no time to figure out the responsiveness of the website. Feel free to browse through my academic history, work experience and projects that I have made.</p>
+                        <h3>About myself</h3>
+
+                        <p>Hello and welcome to my website. If you are looking at this website on your computer then you might seeit as scuffed af because I only develop it for mobile view only asof now. I am still trying to figure out react framework and subsequently no time to figure out the responsiveness of the website.</p>
+
+                        <p>This website is me practicing my react skills and try to experiment and get out of my comfort zone in the designing aspect. Feel free to browse through my academic history, work experience and projects that I hava made.</p>
+
+                    </article>
 
                 </div>
 
             </div>
 
-            <div className="row mb-3">
+            <div className = "row mx-1 d-md-none">
 
-                <div className="col-md-6">
+                <div className = "col-12" id="bioCard">
 
-                    <h5>Biodata</h5>
+                    <div className = "row text-center align-items-center" id = "bioCardHeader">
 
-                    <table>
+                        <div className = "col-6" onClick = {bioActive}>
 
-                        <tr>
+                            <h5>Info</h5>
 
-                            <th>Full Name</th>
+                        </div>
 
-                            <td>Mohammad Izzuddin bin Haji Ali</td>
+                        <div className = "col-6" onClick = {skillsActive}>
 
-                        </tr>
+                            <h5>Skills</h5>
 
-                        <tr>
+                        </div>
 
-                            <th>Date of Birth</th>
+                    </div>
 
-                            <td>23rd of June 1996</td>
+                    <div className = "row">
 
-                        </tr>
+                        {biodata && <Biodata />}
 
-                    </table>
+                        {skills && <Skills />}
 
-                    <h5>Skills</h5>
-
-                    <table>
-
-                        <tr>
-
-                            <th>Web Development</th>
-
-                        </tr>
-
-                        <tr>
-
-                            <th>HTML</th>
-
-                            <td>Intermediate</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <th>Bootstrap CSS</th>
-
-                            <td>Intermediate</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <th>Pure JS</th>
-
-                            <td>Something between novice and intermediate</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <th>React</th>
-
-                            <td>Novice</td>
-
-                        </tr>
-
-                    </table>
+                    </div>
 
                 </div>
+
+            </div>
+
+            <div className = "row my-5 d-none d-md-flex">
+
+                <Biodata />
+
+                <Skills />
 
             </div>
 

@@ -127,7 +127,7 @@ export const allData = {
             image_url: "",
             year: "June 2021",
             info: "",
-            link: "",
+            link: "https://catsat23z.netlify.app",
             git: "https://github.com/izzuddin23ali/catsat",
             more_info: "This project was developed for the pre-interview test set by Synomus for their internship position. This was my entry to developing using React.",
             second_info: ""

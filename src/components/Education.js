@@ -1,14 +1,14 @@
 import Card from "./Card"
 
-const Education = ({ data }) => {
+const Education = ({ data, view }) => {
 
     return(
             
         <>
 
-            {data.schools.map((school) => (
+            {data.data.filter((data) => data.category === "education").map((school) => (
 
-                <Card key = {school.id} data = {school} />
+                <Card key = {school.id} data = {school} view = {view}/>
 
             ))}
 

@@ -1,13 +1,20 @@
 $blue: #3772ff;
 $orange: #ffa630;
+$tertiary: rgba(0,0,0,0.2);
+
+body,
+*{
+    margin:0;
+    padding: 0;
+}
 
 #header{
     background-color: $orange;
-    height: 8vh;
+    height: 6vh;
 }
 
 #hero{
-    height: 8vh;
+    height: 6vh;
 }
 
 #hero:hover{
@@ -38,9 +45,12 @@ $orange: #ffa630;
 .card,
 #bioCard{
     margin: 10px 0;
-    padding: 10px;
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.2);
+}
+
+.card{
+    padding: 10px;
 }
 
 .card .thumbnail{
@@ -102,9 +112,17 @@ button{
     font-style: none;
 }
 
+.bioTable{
+    table-layout: fixed;
+}
+
 .bioTable,
 .bioTable tr{
     width: 100%;
+}
+
+.bioTable{
+    word-wrap: break-word;
 }
 
 .bioList label,
@@ -129,4 +147,12 @@ button{
 
 .clickable:hover{
     cursor: pointer;
+}
+
+#bioCardHeader{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#bioCardHeader .active{
+    background-color: $tertiary;
 }

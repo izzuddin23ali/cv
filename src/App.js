@@ -4,9 +4,10 @@ import Bio from "./components/Bio";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
-import {allData} from "./allData";
 import Navigation from "./components/Navigation";
 import Contact from "./components/Contact";
+import {data} from "./data";
+import MoreInfo from "./components/MoreInfo";
 
 function App() {
 
@@ -64,11 +65,14 @@ function App() {
 
   const [viewMore, setView] = useState(false);
 
-  const viewToggle = () => {
+  const view = (id) => {
+    setCard(id);
     setView(true);
+    console.log(id);
+    console.log(shownCard);
   }
 
-  return (
+  return(
 
     <div className="container-fluid">
 
@@ -80,13 +84,15 @@ function App() {
 
           {noC && <Bio />}
 
-          {edu && <Education data = {allData} />}
+          {edu && <Education data = {data} view = {view}/>}
 
-          {exp && <Experience data = {allData}/>}
+          {exp && <Experience data = {data} view = {view}/>}
 
-          {pro && <Project data = {allData}/>}
+          {pro && <Project data = {data} view = {view}/>}
 
           {cont && <Contact />}
+
+          {viewMore && <MoreInfo data = {data} shownCard = {shownCard}/>}
 
         </div>
 

@@ -51,13 +51,13 @@ const Bio = () => {
 
                     <div className = "row text-center align-items-center" id = "bioCardHeader">
 
-                        <div className = "col-6" onClick = {bioActive}>
+                        <div className = {"col-6 pb-1 pt-2 " + (biodata ? "active" : "")} onClick = {bioActive}>
 
                             <h5>Info</h5>
 
                         </div>
 
-                        <div className = "col-6" onClick = {skillsActive}>
+                        <div className = {"col-6 pb-1 pt-2 " + (skills ? "active" : "")} onClick = {skillsActive}>
 
                             <h5>Skills</h5>
 

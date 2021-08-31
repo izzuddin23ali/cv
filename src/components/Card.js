@@ -1,8 +1,8 @@
-const Card = ( {data} ) => {
+const Card = ( {data, view} ) => {
     return(
         <>
 
-            <div className="card col-12" key = {(data.id).toString()}>
+            <div className="card col-12" key = {(data.id).toString()} onClick = {() => view(data.id)}>
 
                 <div className="row">
 
@@ -32,11 +32,11 @@ const Card = ( {data} ) => {
 
                         {data.link && (<a className="link mr-1" href={data.link}>hosted site</a>)}
 
-                        {data.link && (<i class="fas fa-link mr-1"></i>)}
+                        {data.link && (<i className="fas fa-link mr-1"></i>)}
 
                         {data.git && (<a className="link mr-1" href={data.git}>git repo</a>)}
 
-                        {data.git && (<i class="fab fa-github-square"></i>)}
+                        {data.git && (<i className="fab fa-github-square"></i>)}
 
                         </p>
 

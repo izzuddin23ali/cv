@@ -9,7 +9,7 @@ const Navigation = (props) => {
 
                     <div className="col-12 col-md-4" id="hero" onClick={props.bioToggle}>
 
-                        <h1>Izzuddin Ali</h1>
+                        <h2>Izzuddin Ali</h2>
 
                     </div>
 
@@ -17,7 +17,7 @@ const Navigation = (props) => {
 
                         <div className="row d-flex align-items-center justify-content-around d-md-none">
 
-                            <button onClick={props.eduToggle} className={"col-3 col-md-3" + (props.edu ? "active" : "")}>Education</button>
+                            <button onClick={props.eduToggle} className={"col-3 col-md-3 " + (props.edu ? "active" : "")}>Education</button>
 
                             <button onClick={props.expToggle} className={"col-3 col-md-3 " + (props.exp ? "active" : "")}>Experience</button>
 

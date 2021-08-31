@@ -44,7 +44,7 @@ const Skills = () => {
 
             </div>
 
-            <div className = "col-md-6 col-12 my-2">
+            <div className = "col-md-6 col-12 mt-2">
 
                 <h5>Applications Skills</h5>
 

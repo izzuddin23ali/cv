@@ -1,12 +1,12 @@
 import Card from "./Card"
 
-const Experience = ( {data}) => {
+const Experience = ( {data, view}) => {
     return(
         <>
 
-            {data.jobs.map((job) => (
+            {data.data.filter((data) => data.category === "experience").map((job) => (
 
-                <Card key = {job.id} data = {job} />
+                <Card key = {job.id} data = {job} view = {view}/>
 
             ))}
             

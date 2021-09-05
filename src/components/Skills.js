@@ -40,6 +40,14 @@ const Skills = () => {
 
                     </li>
 
+                    <li>
+
+                        <label for = "python">Python</label>
+
+                        <progress id = "python" value = "30" max = "100"></progress>
+
+                    </li>
+
                 </ul> 
 
             </div>

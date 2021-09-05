@@ -72,6 +72,10 @@ function App() {
     console.log(shownCard);
   }
 
+  const close = () => {
+    setView(false);
+  }
+
   return(
 
     <div className="container-fluid">
@@ -92,9 +96,9 @@ function App() {
 
           {cont && <Contact />}
 
-          {viewMore && <MoreInfo data = {data} shownCard = {shownCard}/>}
-
         </div>
+
+        {viewMore && <MoreInfo data = {data} shownCard = {shownCard} close = {close}/>}
 
       </div>
 

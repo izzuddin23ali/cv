@@ -1,27 +1,6 @@
 export const data = {
     "data": [  
         {
-            id: 0,
-            category: "education",
-            name: "Chung Hua Primary School",
-            image_url: "https://educationdestinationmalaysia.com/storage/files/H9Gqh0A5sbBxIHv94XedCBGgRkIKN2.jpeg",
-            class: "Pre-School",
-            year: "2002",
-            info: "Went to Chung Hua for pre-school.",
-            more_info: "Went to Chung Hua for pre-school."
-        },
-        {
-            id: 1,
-            category: "education",
-            name: "Sekolah Rendah Dato Marsal",
-            image_url : "",
-            class: "Primary Education",
-            year: "2003 - 2008",
-            info: "5 A for PSR",
-            certificate: "5 A for PSR in 2008",
-            more_info: "5 A for Peperiksaan Sijil Rendah (PSR)."
-        },
-        {
             id: 3,
             category: "education",
             name: "Maktab Sains PSBS",
@@ -30,8 +9,34 @@ export const data = {
             year: "2009 - 2014",
             info: "9 O-level and 3 A-level",
             certificate: "",
-            more_info: "",
-            second_info: ""
+            more_info: "9 O-level and 3 A-level",
+            second_info: "",
+            exam_one: "O-level",
+            exam_one_subject_one: "English Language",
+            exam_one_subject_one_grade: "C6",
+            exam_one_subject_two: "Bahasa Melayu",
+            exam_one_subject_two_grade: "B4",
+            exam_one_subject_three: "Islamic Religious Knowledge",
+            exam_one_subject_three_grade: "B3",
+            exam_one_subject_four: "Mathematics",
+            exam_one_subject_four_grade: "B3",
+            exam_one_subject_five: "Additional Mathematics",
+            exam_one_subject_five_grade: "C5",
+            exam_one_subject_six: "Physics",
+            exam_one_subject_six_grade: "B3",
+            exam_one_subject_seven: "Chemistry",
+            exam_one_subject_seven_grade: "B3",
+            exam_one_subject_eight: "Biology",
+            exam_one_subject_eight_grade: "B3",
+            exam_one_subject_nine: "Principles of Accounts",
+            exam_one_subject_nine_grade: "B4",
+            exam_two: "A-level",
+            exam_two_subject_one: "Physics",
+            exam_two_subject_one_grade: "C",
+            exam_two_subject_two: "Mathematics",
+            exam_two_subject_two_grade: "C",
+            exam_two_subject_three: "Business Studies",
+            exam_two_subject_three_grade: "C"
         },
         {
             id: 4,
@@ -43,7 +48,7 @@ export const data = {
             year: "2015 - 2019",
             info: "Bachelor of Business in Technology Management",
             certificate: "Graduate Second Upper class honours",
-            more_info: ""
+            more_info: "Graduated Second Upper class honours for Bachelor of Business(hons.) in Technology Management."
         },
         {
             id: 5,
@@ -63,17 +68,20 @@ export const data = {
             position: "Driver",
             year: "October 2019 - March 2021 (1.5 year)",
             info: "",
-            more_info: "Initially a part-time room attendant, got transferred as a laundry helper and worked there, still part-time, for three months. On January, I took the opportunity to go full-time as a drive for the laundry department."
+            more_info: "Started as part-time room attendant, got transferred as a laundry helper and worked there for three months. On January, I took the opportunity to go full-time as a driver for the laundry department."
         },
         {
             id: 7,
             category: "projects",
             name: "Tapau.com",
-            image_url: "https://mia23z.netlify.app/img/tapau/tapau1.png",
+            image_url: "",
             year: "March - April 2017",
             info: "Full disclosure, it was never hosted to tapau.com",
             more_info: "Tapau.com is a project that was done for the course Introduction to Web Development when I studied at UTB. Me and my partner develop the website using HTML, CSS, an AJAX template for the cart scriptings and PHP for the backend. My role in the project was the programming development of the website following my partner's design.",
-            second_info: "It was never hosted to tapau.com"
+            second_info: "It was never hosted to tapau.com",
+            framework: true,
+            html: true,
+            css: true
         },
         {
             id: 8,
@@ -93,7 +101,11 @@ export const data = {
             year: "March 2021",
             info: "",
             link: "https://mia23z.netlify.app",
-            more_info: "First assignment for Coding.bn was personal portfolio using bootstrap."
+            more_info: "First assignment for Coding.bn was personal portfolio to practice the usage of bootstrap.",
+            framework: true,
+            html: true,
+            css: true,
+            bootstrap: true
         },
         {
             id: 10,
@@ -104,7 +116,12 @@ export const data = {
             info: "",
             link: "https://izzuddinttt.netlify.app",
             git: "https://github.com/izzuddin23ali/tictactoe",
-            more_info: "Coding.bn's assignment for April was making a game, in order to practice javascript."
+            more_info: "Coding.bn's assignment for April was making a game, in order to practice javascript.",
+            framework: true,
+            html: true,
+            css: true,
+            bootstrap: true,
+            js: true
         },
         {
             id: 11,
@@ -115,7 +132,12 @@ export const data = {
             info: "",
             link: "https://texteditor23z.netlify.app/",
             git: "https://github.com/izzuddin23ali/texteditor",
-            more_info: "Another assignment from Coding.bn to practice javascript."
+            more_info: "Another assignment from Coding.bn to practice javascript.",
+            framework: true,
+            html: true,
+            css: true,
+            bootstrap: true,
+            js: true
         },
         {
             id: 12,
@@ -127,7 +149,13 @@ export const data = {
             link: "https://embn.herokuapp.com/",
             git: "https://github.com/izzuddin23ali/blog",
             more_info: "For the third month, Coding.bn assigned the task of developing a full-stack website either individually or within a group. I develop this website with the initial plan of developing a forum for local car enthusiasts as I feel we do not have any focused platform for the car enthusiasts. It then turns into a directory of local businesses that are in the car scene.",
-            second_info: "The forum aforementioned was developed using NodeBB, hosted to emantukaforum.com using Digital Ocean and fully usable. It won't be listed in the projects tab as it was not financially the correct decision to keep it up."
+            second_info: "",
+            third_info: "The forum aforementioned was developed using NodeBB, hosted to emantukaforum.com using Digital Ocean and fully usable. It won't be listed in the projects tab as it was not financially the correct decision to keep it up.",
+            framework: true,
+            html: true,
+            css: true,
+            bootstrap: true,
+            js: true
         },
         {
             id: 13,
@@ -139,7 +167,44 @@ export const data = {
             link: "https://catsat23z.netlify.app",
             git: "https://github.com/izzuddin23ali/catsat",
             more_info: "This project was developed for the pre-interview test set by Synomus for their internship position. This was my entry to developing using React.",
-            second_info: ""
+            second_info: "",
+            framework: true,
+            html: true,
+            react: true,
+            bootstrap: true
+        },
+        {
+            id: 14,
+            category: "education",
+            name: "Coding.bn",
+            image_url: "https://codingbn.com/creative-startup/img/CBN1.png",
+            year: "March - September 2021",
+            course: "",
+            class: "Vocational Training",
+            info: "",
+            more_info: "Coding.bn is a 6 months course program initiated by AITI Brunei to train unemployed youths with coding/programming skills aligned with demand in the industry."
+        },
+        {
+            id: 15,
+            category: "experience",
+            name: "Mumtaz Collections",
+            image_url: "https://www.mumtazcollections.com/image/catalog/Mumtaz/Logo/mumtaz-logo-150x150.png",
+            year: "July - September 2021",
+            info: "",
+            position: "Intern",
+            more_info: "Became an intern under the supervision of the general manager of Mumtaz Collections. I learned about how to become a freelancer in the web development industry, how to market, how to conduct business and so on."
+        },
+        {
+            id: 16,
+            category: "projects",
+            name: "Instaloader python project",
+            image_url: "",
+            year: "September 2021",
+            git: "https://github.com/izzuddin23ali/instaloader-miniproject",
+            info: "",
+            more_info: "A mini project using Python to read a csv, take a list of IG username, and using the username to download the biography of the profile, overwriting the empty biography cells of the aforementioned csv. The code also downloads the profile picture of the list of IG usernames into one folder.",
+            framework: true,
+            python: true
         }
     ]
 }

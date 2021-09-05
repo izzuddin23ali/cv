@@ -35,7 +35,7 @@ const Bio = () => {
 
                         <h3>About myself</h3>
 
-                        <p>Hello and welcome to my website. If you are looking at this website on your computer then you might seeit as scuffed af because I only develop it for mobile view only asof now. I am still trying to figure out react framework and subsequently no time to figure out the responsiveness of the website.</p>
+                        <p>Hello and welcome to my website. This website is still quite barebone as I am still looking for stuff to add!</p>
 
                         <p>This website is me practicing my react skills and try to experiment and get out of my comfort zone in the designing aspect. Feel free to browse through my academic history, work experience and projects that I hava made.</p>
 

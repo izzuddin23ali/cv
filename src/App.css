@@ -1,20 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body,
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Baloo 2', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header {
   background-color: #ffa630;
-  height: 6vh;
-}
-
-#hero {
-  height: 6vh;
 }
 
 #hero:hover {
   cursor: pointer;
+}
+
+#hero h2 {
+  margin: 0;
 }
 
 #portrait img {
@@ -27,10 +33,13 @@ body,
 
 #nav button {
   text-align: center;
-  background-color: #3772ff;
-  color: white;
-  height: 4vh;
-  margin-top: 2vh;
+  background-color: inherit;
+  color: black;
+  height: 5vh;
+}
+
+#nav button:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #nav button.active {
@@ -59,6 +68,10 @@ body,
   margin-bottom: 10px;
 }
 
+.card .thumbnail i {
+  font-size: 62px;
+}
+
 .card h5, .card h6 {
   text-align: left;
 }
@@ -84,6 +97,9 @@ body,
     height: 3.5vh;
     margin-bottom: 2vh;
     margin-top: 0.5vh;
+    background-color: #3772ff;
+    color: white;
+    font-weight: bold;
   }
   #nav button {
     font-size: smaller;
@@ -93,6 +109,9 @@ body,
     overflow: scroll;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+  }
+  #framework i {
+    opacity: 40%;
   }
 }
 
@@ -107,7 +126,8 @@ button {
 }
 
 .bioTable,
-.bioTable tr {
+.bioTable tr,
+.exam tr {
   width: 100%;
 }
 
@@ -118,21 +138,28 @@ button {
 .bioList label,
 .bioList progress,
 .bioTable th,
-.bioTable td {
+.bioTable td,
+.exam th,
+.exam td,
+.alevel th,
+.alevel td {
   width: 50%;
+}
+
+.alevel td,
+.exam td {
+  text-align: right;
+}
+
+.bioTable th,
+.exam th,
+.alevel th {
+  font-weight: normal;
 }
 
 .bioList {
   list-style: none;
   padding: 0;
-}
-
-#bigNav {
-  height: 100%;
-}
-
-#bigNav .clickable:hover {
-  background-color: #3772ff;
 }
 
 .clickable:hover {
@@ -145,5 +172,51 @@ button {
 
 #bioCardHeader .active {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+#framework {
+  overflow-y: visible;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 2vh;
+}
+
+#framework i {
+  font-size: 32px;
+  opacity: 50%;
+}
+
+#close {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#chosen {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  background-color: white;
+}
+
+#instruction {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: smaller;
+}
+
+#instruction p {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=App.css.map */

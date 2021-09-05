@@ -15,7 +15,7 @@ const Navigation = (props) => {
 
                     <div className="col-12 offset-md-2 col-md-6" id="nav">
 
-                        <div className="row d-flex align-items-center justify-content-around d-md-none">
+                        <div className="row d-flex align-items-center justify-content-around ">
 
                             <button onClick={props.eduToggle} className={"col-3 col-md-3 " + (props.edu ? "active" : "")}>Education</button>
 
@@ -25,7 +25,7 @@ const Navigation = (props) => {
 
                         </div>
 
-                        <div className="row d-none d-md-flex align-items-center" id="bigNav">
+                        <div className="row d-none align-items-center" id="bigNav">
 
                             <div className = "col-md-3 clickable d-flex align-items-center" onClick = {props.eduToggle}>
 

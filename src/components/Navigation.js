@@ -1,67 +1,43 @@
-const Navigation = (props) => {
-    return(
+import { Link } from "react-router-dom";
 
-        <div className="row" id="header">
+const Navigation = () => {
+  return (
+    <div className="row" id="header">
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-            <div className="col-12 col-md-8 mx-auto">
-
-                <div className="row">
-
-                    <div className="col-12 col-md-4" id="hero" onClick={props.bioToggle}>
-
-                        <h2>Izzuddin Ali</h2>
-
-                    </div>
-
-                    <div className="col-12 offset-md-2 col-md-6" id="nav">
-
-                        <div className="row d-flex align-items-center justify-content-around ">
-
-                            <button onClick={props.eduToggle} className={"col-3 col-md-3 " + (props.edu ? "active" : "")}>Education</button>
-
-                            <button onClick={props.expToggle} className={"col-3 col-md-3 " + (props.exp ? "active" : "")}>Experience</button>
-
-                            <button onClick={props.projectToggle} className={"col-3 col-md-3 " + (props.pro ? "active" : "")}>Projects</button>
-
-                        </div>
-
-                        <div className="row d-none align-items-center" id="bigNav">
-
-                            <div className = "col-md-3 clickable d-flex align-items-center" onClick = {props.eduToggle}>
-
-                                <p>Education</p>
-
-                            </div>
-
-                            <div className = "col-md-3 clickable" onClick = {props.expToggle}>
-
-                                <p>Experience</p>
-
-                            </div>
-
-                            <div className = "col-md-3 clickable" onClick = {props.projectToggle}>
-
-                                <p>Projects</p>
-
-                            </div>
-
-                            <div className = "col-md-3 clickable" onClick = {props.contactToggle}>
-
-                                <p>Contacts</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto">
+            <Link to={"/"}>
+              <li className="nav-item">
+                <span className="nav-link">Home</span>
+              </li>
+            </Link>
+            <Link to={"/resume"}>
+              <li className="nav-item">
+                <span className="nav-link">Resume</span>
+              </li>
+            </Link>
+            <Link to={"/portfolio"}>
+              <li className="nav-item">
+                <span className="nav-link">Portfolio</span>
+              </li>
+            </Link>
+          </ul>
         </div>
-
-    )
-}
+      </nav>
+    </div>
+  );
+};
 
 export default Navigation;

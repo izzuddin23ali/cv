@@ -1,233 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 $blue: #3772ff;
 $orange: #ffa630;
-$tertiary: rgba(0,0,0,0.2);
+$tertiary: rgba(0, 0, 0, 0.1);
 
 body,
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Baloo 2', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo 2", cursive;
+}
+body {
+  background-color: lightpink;
+}
+#main,
+#personal {
+  background-color: white;
+  border-radius: 20px;
+}
+#header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat', sans-serif;
+#header {
+  background-color: $orange;
 }
 
-#header{
-    background-color: $orange;
-}
-
-#hero:hover{
-    cursor: pointer;
-}
-
-#hero h2{
-    margin:0;
-}
-
-#portrait img{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#nav button{
-    text-align: center;
-    background-color: inherit;
-    color: black;
-    height: 5vh;
-}
-
-#nav button:hover{
-    color: rgba(0,0,0,0.5);
-}
-
-#nav button.active{
-    background-color: $blue;
-    color: $orange;
+#portrait img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
 }
 
 .card,
-#bioCard{
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid rgba(0,0,0,0.2);
+#bioCard {
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card{
-    padding: 10px;
+.card {
+  padding: 10px;
 }
 
-.card .thumbnail{
-    height: 150px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.card .thumbnail {
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.card .thumbnail i{
-    font-size: 62px;
+.card .thumbnail i {
+  font-size: 62px;
 }
 
-.card h5, .card h6{
-    text-align: left;
+.card h5,
+.card h6 {
+  text-align: left;
 }
 
-.card h6{
-    font-style:normal;
+.card h6 {
+  font-style: normal;
 }
 
-.card p{
-    text-align: justify;
+.card p {
+  text-align: justify;
 }
 
 /*mobile phone*/
 
-@media(min-width: 320px) and (max-width: 480px){
-    #header{
-        height: 12vh;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+  #header {
+    height: 12vh;
+  }
 
-    #hero{
-        text-align: center;
-        height: 6vh;
-    }
+  #hero {
+    text-align: center;
+    height: 6vh;
+  }
 
-    #nav button{
-        height: 3.5vh;
-        margin-bottom: 2vh;
-        margin-top: 0.5vh;
-        background-color: $blue;
-        color: white;
-        font-weight: bold;
-    }
+  #content {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
 
-    #nav button{
-        font-size: smaller;
-    }
-
-    #content{
-        height: 88vh;
-        overflow: scroll;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-    }
-
-    #framework i{
-        opacity: 40%;
-    }
-
+  #framework i {
+    opacity: 40%;
+  }
 }
 
-button{
-    border-radius: 10px;
-    border: none;
-    font-style: none;
+button {
+  border-radius: 10px;
+  border: none;
+  font-style: none;
 }
 
-.bioTable{
-    table-layout: fixed;
+.exam tr {
+  width: 100%;
 }
 
-.bioTable,
-.bioTable tr,
-.exam tr{
-    width: 100%;
-}
-
-.bioTable{
-    word-wrap: break-word;
-}
-
-.bioList label,
-.bioList progress,
-.bioTable th,
-.bioTable td,
 .exam th,
 .exam td,
 .alevel th,
-.alevel td{
-    width: 50%;
+.alevel td {
+  width: 50%;
 }
 
 .alevel td,
-.exam td{
-    text-align: right;
+.exam td {
+  text-align: right;
 }
 
-.bioTable th,
 .exam th,
-.alevel th{
-    font-weight: normal;
+.alevel th {
+  font-weight: normal;
 }
 
-.bioList{
-    list-style: none;
-    padding: 0;
+.clickable:hover {
+  cursor: pointer;
 }
 
-.clickable:hover{
-    cursor: pointer;
+#bioCardHeader {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#bioCardHeader{
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+#framework {
+  overflow-y: visible;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 2vh;
 }
 
-#bioCardHeader .active{
-    background-color: $tertiary;
+#framework i {
+  font-size: 32px;
+  opacity: 50%;
 }
 
-#framework{
-    overflow-y: visible;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-bottom: 2vh;
+i.react {
+  color: #61dbfb;
 }
 
-#framework i{
-    font-size: 32px;
-    opacity: 50%;
+i.html {
+  color: #ffa500;
 }
 
-#close{
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: red;
-    margin-top: 5px;
-    margin-right: 5px;
+i.python {
+  color: #4b8bbe;
 }
 
-#chosen{
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 99;
-    background-color: white;
+.progress {
+  height: 2rem;
+  border-radius: 15px;
 }
 
-#instruction{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: smaller;
+.progress-bar {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
 }
 
-#instruction p{
-    margin: 0;
-    padding: 0;
+.progress-text {
+  justify-content: space-between;
+  display: flex;
+}
+
+.progress-text span {
+  font-size: 1rem;
+}
+
+#personal ul {
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#personal ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#personal ul li i {
+  margin-right: 0.5rem;
+  width: 16px;
+}
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
+
+#personal button {
+  background-color: $blue;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 10px;
+}
+
+#personal button a {
+  color: white;
+}
+
+#personal span {
+  border-radius: 20px;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+#personal i {
+  color: black;
 }

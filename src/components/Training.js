@@ -1,11 +1,11 @@
 import Card from "./Card";
 
-const Education = ({ data }) => {
+const Training = ({ data }) => {
   return (
     <>
-      <h2>Education</h2>
+      <h2>Training</h2>
       {data.data
-        .filter((data) => data.category === "education")
+        .filter((data) => data.category === "training")
         .map((school) => (
           <Card key={school.id} data={school} />
         ))}
@@ -13,4 +13,4 @@ const Education = ({ data }) => {
   );
 };
 
-export default Education;
+export default Training;

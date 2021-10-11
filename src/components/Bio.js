@@ -1,93 +1,54 @@
 import Skills from "./Skills";
 import Biodata from "./Biodata";
-import {useState} from "react";
+import { useState } from "react";
 
 const Bio = () => {
+  const [biodata, setBio] = useState(true);
 
-    const [biodata, setBio] = useState(true);
+  const [skills, setSkills] = useState(false);
 
-    const [skills, setSkills] = useState(false);
+  const bioActive = () => {
+    setBio(true);
+    setSkills(false);
+  };
 
-    const bioActive = () => {
-        setBio(true);
-        setSkills(false);
-    }
+  const skillsActive = () => {
+    setSkills(true);
+    setBio(false);
+  };
 
-    const skillsActive = () => {
-        setSkills(true);
-        setBio(false);
-    }
+  return (
+    <>
+      <h2>About myself</h2>
+      <div className="row justify-content-between">
+        <div className="col-md-12 d-flex align-items-center">
+          <article>
+            <p>
+              Hello and welcome to my website. This website is still quite
+              barebone as I am still looking for stuff to add!
+            </p>
 
-    return(
+            <p>
+              This website is me practicing my react skills and learning how to
+              use react-router-dom, and also subsequently try to experiment and
+              get out of my comfort zone in the designing aspect.
+            </p>
 
-        <>
-            <div className="row mt-2 justify-content-between mb-2 md-md-5">
+            <p>
+              Feel free to browse through my academic history, work experience
+              and projects that I have made and do download my CV by clicking on
+              the 'Download CV' button on the left-size panel if you're
+              interested.
+            </p>
+          </article>
+        </div>
+      </div>
 
-                <div className="col-md-4" id="portrait">
-
-                    <img className="mx-auto" src="images/yak.png" alt="yak" />
-
-                </div>
-
-                <div className="col-md-8 d-flex align-items-center">
-
-                    <article>
-
-                        <h3>About myself</h3>
-
-                        <p>Hello and welcome to my website. This website is still quite barebone as I am still looking for stuff to add!</p>
-
-                        <p>This website is me practicing my react skills and try to experiment and get out of my comfort zone in the designing aspect. Feel free to browse through my academic history, work experience and projects that I hava made.</p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-            <div className = "row mx-1 d-md-none">
-
-                <div className = "col-12" id="bioCard">
-
-                    <div className = "row text-center align-items-center" id = "bioCardHeader">
-
-                        <div className = {"col-6 pb-1 pt-2 " + (biodata ? "active" : "")} onClick = {bioActive}>
-
-                            <h5>Info</h5>
-
-                        </div>
-
-                        <div className = {"col-6 pb-1 pt-2 " + (skills ? "active" : "")} onClick = {skillsActive}>
-
-                            <h5>Skills</h5>
-
-                        </div>
-
-                    </div>
-
-                    <div className = "row">
-
-                        {biodata && <Biodata />}
-
-                        {skills && <Skills />}
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className = "row my-5 d-none d-md-flex">
-
-                <Biodata />
-
-                <Skills />
-
-            </div>
-
-        </>
-
-    )
-}
+      <div className="row">
+        <Skills />
+      </div>
+    </>
+  );
+};
 
 export default Bio;

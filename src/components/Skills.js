@@ -1,93 +1,77 @@
 const Skills = () => {
-    return(
-        <>
-
-            <div className = "col-md-6 col-12 my-2">
-
-                <h5>Programming Skills</h5>
-
-                <ul className = "bioList">
-
-                    <li>
-
-                        <label for = "html">HTML</label>
-
-                        <progress id = "html" value = "60" max = "100"></progress>
-
-                    </li>
-
-                    <li>
-
-                        <label for ="css">CSS / Bootstrap CSS</label>
-
-                        <progress id = "css" value = "60" max = "100"></progress>
-
-                    </li>
-
-                    <li>
-
-                        <label for = "javascript">JavaScript</label>
-
-                        <progress id = "javascript" value = "40" max = "100"></progress>
-
-                    </li>
-
-                    <li>
-
-                        <label for = "react">React</label>
-
-                        <progress id = "react" value = "40" max = "100"></progress>
-
-                    </li>
-
-                    <li>
-
-                        <label for = "python">Python</label>
-
-                        <progress id = "python" value = "30" max = "100"></progress>
-
-                    </li>
-
-                </ul> 
-
+  return (
+    <>
+      <div className="col-md-6 col-12 mt-2">
+        <h5>Web Development Skills</h5>
+        <div className="progress mb-3">
+          <div className="progress-bar" style={{ width: "75%" }}>
+            <div className="progress-text">
+              <span>HTML</span>
+              <span>75%</span>
             </div>
-
-            <div className = "col-md-6 col-12 mt-2">
-
-                <h5>Applications Skills</h5>
-
-                <ul className = "bioList">
-
-                    <li>
-
-                        <label for = "word">MS Word</label>
-
-                        <progress id = "word" value = "50" max = "100"></progress>
-
-                    </li>
-
-                    <li>
-
-                        <label for = "powerpoint">MS PowerPoint</label>
-
-                        <progress id = "powerpoint" value = "40" max = "100"></progress>
-
-                    </li>
-
-                    <li>
-
-                        <label for = "access">MS Access</label>
-
-                        <progress id = "access" value = "30" max = "100"></progress>
-
-                    </li>
-
-                </ul>
-
+          </div>
+        </div>
+        <div className="progress my-3">
+          <div className="progress-bar" style={{ width: "60%" }}>
+            <div className="progress-text">
+              <span>CSS / Bootstrap</span>
+              <span>60%</span>
             </div>
+          </div>
+        </div>
+        <div className="progress my-3">
+          <div className="progress-bar" style={{ width: "40%" }}>
+            <div className="progress-text">
+              <span>JavaScript</span>
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+        <div className="progress my-3">
+          <div className="progress-bar" style={{ width: "50%" }}>
+            <div className="progress-text">
+              <span>React</span>
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+        <div className="progress my-3">
+          <div className="progress-bar" style={{ width: "40%" }}>
+            <div className="progress-text">
+              <span>OpenCart</span>
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        </>
-    )
-}
+      <div className="col-md-6 col-12 mt-2">
+        <h5>Programming Languages</h5>
+        <div className="progress mb-3">
+          <div className="progress-bar" style={{ width: "30%" }}>
+            <div className="progress-text">
+              <span>Python</span>
+              <span>30%</span>
+            </div>
+          </div>
+        </div>
+        <div className="progress my-3">
+          <div className="progress-bar" style={{ width: "20%" }}>
+            <div className="progress-text">
+              <span>C#</span>
+            </div>
+          </div>
+        </div>
+        <div className="progress my-3">
+          <div className="progress-bar" style={{ width: "15%" }}>
+            <div className="progress-text">
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Skills;

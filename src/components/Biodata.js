@@ -1,69 +1,55 @@
 const Biodata = () => {
-    return(
-        <>
+  return (
+    <>
+      <div className="col-md-6 col-12 my-3">
+        <h5>Info</h5>
 
-            <div className="col-md-6 col-12 my-3">
+        <table className="bioTable">
+          <tr>
+            <th>Full Name</th>
 
-                <h5>Info</h5>
+            <td>Mohammad Izzuddin bin Haji Ali</td>
+          </tr>
 
-                <table className = "bioTable">
+          <tr>
+            <th>Date of Birth</th>
 
-                    <tr>
+            <td>23rd of June 1996</td>
+          </tr>
+        </table>
+      </div>
 
-                        <th>Full Name</th>
+      <div className="col-md-6 col-12 my-3">
+        <h5>Contacts</h5>
 
-                        <td>Mohammad Izzuddin bin Haji Ali</td>
+        <table className="bioTable">
+          <tr>
+            <th>Email</th>
 
-                    </tr>
+            <td>izzuddin.binali@gmail.com</td>
+          </tr>
 
-                    <tr>
+          <tr>
+            <th>GitHub</th>
 
-                        <th>Date of Birth</th>
+            <td>
+              <a href="https://github.com/izzuddin23ali">izzuddin23ali</a>
+            </td>
+          </tr>
 
-                        <td>23rd of June 1996</td>
+          <tr>
+            <th>linkedIn</th>
 
-                    </tr>
-
-                </table>
-
-            </div>
-
-            <div className = "col-md-6 col-12 my-3">
-
-                <h5>Contacts</h5>
-
-                <table className = "bioTable">
-                    
-                    <tr>
-
-                        <th>Email</th>
-
-                        <td>izzuddin.binali@gmail.com</td>
-
-                    </tr>
-
-                    <tr>
-
-                        <th>GitHub</th>
-
-                        <td><a href="https://github.com/izzuddin23ali">izzuddin23ali</a></td>
-
-                    </tr>
-
-                    <tr>
-
-                        <th>linkedIn</th>
-
-                        <td><a href="https://www.linkedin.com/in/izzuddin-ali-575a18211/">Izzuddin Ali</a></td>
-
-                    </tr>
-
-                </table>
-
-            </div>
-
-        </>
-    )
-}
+            <td>
+              <a href="https://www.linkedin.com/in/izzuddin-ali-575a18211/">
+                Izzuddin Ali
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </>
+  );
+};
 
 export default Biodata;

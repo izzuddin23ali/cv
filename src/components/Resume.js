@@ -4,11 +4,11 @@ import Training from "./Training";
 
 const Resume = ({ data }) => {
   return (
-    <>
+    <div id="resume">
       <Education data={data} />
       <Training data={data} />
       <Experience data={data} />
-    </>
+    </div>
   );
 };
 

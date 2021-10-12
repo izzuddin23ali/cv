@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 body,
 * {
   margin: 0;
@@ -20,11 +20,16 @@ body {
 #header {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-color: #ffa630;
+}
+
+nav * {
+  color: black;
 }
 
 .container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 h1,
@@ -36,17 +41,14 @@ h6 {
   font-family: "Montserrat", sans-serif !important;
 }
 
-#header {
-  background-color: #ffa630;
-}
-
 #portrait img {
   width: 100%;
   height: auto;
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card,
@@ -60,8 +62,12 @@ h6 {
   padding: 10px;
 }
 
+.card:last-child {
+  margin-bottom: 15px;
+}
+
 .card .thumbnail {
-  height: 150px;
+  height: auto;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,33 +117,8 @@ button {
   font-style: none;
 }
 
-.exam tr {
-  width: 100%;
-}
-
-.exam th,
-.exam td,
-.alevel th,
-.alevel td {
-  width: 50%;
-}
-
-.alevel td,
-.exam td {
-  text-align: right;
-}
-
-.exam th,
-.alevel th {
-  font-weight: normal;
-}
-
 .clickable:hover {
   cursor: pointer;
-}
-
-#bioCardHeader {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #framework {
@@ -168,6 +149,7 @@ i.python {
 .progress {
   height: 2rem;
   border-radius: 15px;
+  background-color: white;
 }
 
 .progress-bar {
@@ -200,12 +182,12 @@ i.python {
 }
 
 #personal ul li i {
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
   width: 16px;
 }
 
 .bg-tertiary {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #e9ecef;
 }
 
 #personal button {
@@ -228,7 +210,42 @@ i.python {
   padding-bottom: 0.1rem;
 }
 
-#personal i {
+#personal * {
   color: black;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-orange {
+  background-color: #ffa630;
+}
+
+.bg-orange-lightcontrast {
+  background-color: rgba(255, 166, 48, 0.5);
+}
+
+#download i {
+  color: white;
+  margin-right: 0.8rem;
+}
+
+.nav-item {
+  margin: 0 1.2rem;
+}
+
+.section-header {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-header i {
+  margin-right: 0.5rem;
+}
+
+.year {
+  color: grey;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=App.css.map */

@@ -8,10 +8,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const Main = () => {
   return (
     <Router>
-      <div className="col-md-8" id="main">
+      <div className="col-md-8 overflow-hidden" id="main">
         <Navigation />
 
-        <div className="row my-2" id="content">
+        <div className="row mt-2" id="content">
           <div className="col-12 mx-auto">
             <Switch>
               <Route path="/" exact component={Bio} />

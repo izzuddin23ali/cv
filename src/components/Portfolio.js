@@ -1,15 +1,12 @@
-import Card from "./Card";
+import Projects from "./Projects";
+import Featured from "./Featured";
 
 const Portfolio = ({ data }) => {
   return (
-    <>
-      <h2>Portfolio</h2>
-      {data.data
-        .filter((data) => data.category === "projects")
-        .map((project) => (
-          <Card key={project.id} data={project} />
-        ))}
-    </>
+    <div id="projects">
+      <Featured data={data} />
+      <Projects data={data} />
+    </div>
   );
 };
 

@@ -11,7 +11,6 @@ export const data = {
       info: "9 O-level and 3 A-level",
       certificate: "",
       more_info: "9 O-level and 3 A-level",
-      second_info: "",
     },
     {
       id: 4,
@@ -33,7 +32,7 @@ export const data = {
       image_url: "https://mia23z.netlify.app/img/ipa.png",
       position: "Attached Internship",
       year: "January - July 2018 (6 months)",
-      info: "",
+      info: "Attached internship in the IT department, main task was to develop a database system.",
       more_info:
         "Interned in the IT department of the Civil Service Institute. Over the duration of six months, I was tasked with two assignments and provide technician and logistic services for two events. One of the assignments, Assessment Center Database System are explained further in the projects tab.",
     },
@@ -45,7 +44,7 @@ export const data = {
         "https://starlodgebrunei.com/wp-content/uploads/2017/07/LogoStroke.png",
       position: "Driver",
       year: "October 2019 - March 2021 (1.5 year)",
-      info: "",
+      info: "Worked as room attendant, laundry helper and laundry driver.",
       more_info:
         "Started as part-time room attendant, got transferred as a laundry helper and worked there for three months. On January, I took the opportunity to go full-time as a driver for the laundry department.",
     },
@@ -55,10 +54,11 @@ export const data = {
       name: "Tapau.com",
       image_url: "",
       year: "March - April 2017",
-      info: "Full disclosure, it was never hosted to tapau.com",
+      info: "Introduction to web development",
       more_info:
         "Tapau.com is a project that was done for the course Introduction to Web Development when I studied at UTB. Me and my partner develop the website using HTML, CSS, an AJAX template for the cart scriptings and PHP for the backend. My role in the project was the programming development of the website following my partner's design.",
       second_info: "It was never hosted to tapau.com",
+      link: "https://tapau23z.netlify.app/index.html",
       framework: true,
       html: true,
       css: true,
@@ -69,7 +69,7 @@ export const data = {
       name: "Assessment Center Database System",
       image_url: "",
       year: "March - July 2018",
-      info: "",
+      info: "Database system based in Microsoft Access developed for Institut Perkhidmatan Awam during internship.",
       more_info:
         "Assessment Center Database System (ACDS) was a project that was assigned to me and a partner during our attached internship at Institut Perkhidmatan Awam. Their assessment center department was using Microsoft Excel as their database system and was long overdue an overhaul of the system. We self-learn and utilized Microsoft Access for the project.",
       second_info:
@@ -81,7 +81,7 @@ export const data = {
       name: "Personal Portfolio",
       image_url: "",
       year: "March 2021",
-      info: "",
+      info: "First assignment for Coding.bn to practice the usage of Bootstrap.",
       link: "https://mia23z.netlify.app",
       more_info:
         "First assignment for Coding.bn was personal portfolio to practice the usage of bootstrap.",
@@ -96,7 +96,7 @@ export const data = {
       name: "Tic Tac Toe",
       image_url: "",
       year: "April 2021",
-      info: "",
+      info: "Coding.bn assignment to practice javascript.",
       link: "https://izzuddinttt.netlify.app",
       git: "https://github.com/izzuddin23ali/tictactoe",
       more_info:
@@ -113,7 +113,7 @@ export const data = {
       name: "Text Editor",
       image_url: "",
       year: "May 2021",
-      info: "",
+      info: "Another assignment from Coding.bn to practice javascript.",
       link: "https://texteditor23z.netlify.app/",
       git: "https://github.com/izzuddin23ali/texteditor",
       more_info: "Another assignment from Coding.bn to practice javascript.",
@@ -129,7 +129,7 @@ export const data = {
       name: "EMBN",
       image_url: "",
       year: "June 2021",
-      info: "",
+      info: "Third month assignment to test out our full-stack development prowess.",
       link: "https://embn.herokuapp.com/",
       git: "https://github.com/izzuddin23ali/blog",
       more_info:
@@ -149,7 +149,7 @@ export const data = {
       name: "CatSat",
       image_url: "",
       year: "June 2021",
-      info: "",
+      info: "Pre-interview test for Synomus, done in React.",
       link: "https://catsat23z.netlify.app",
       git: "https://github.com/izzuddin23ali/catsat",
       more_info:
@@ -168,7 +168,7 @@ export const data = {
       year: "March - September 2021",
       course: "",
       class: "Vocational Training",
-      info: "",
+      info: "Full stack developer bootcamp.",
       more_info:
         "Coding.bn is a 6 months course program initiated by AITI Brunei to train unemployed youths with coding/programming skills aligned with demand in the industry.",
     },
@@ -179,7 +179,7 @@ export const data = {
       image_url:
         "https://www.mumtazcollections.com/image/catalog/Mumtaz/Logo/mumtaz-logo-150x150.png",
       year: "July - September 2021 (3 months)",
-      info: "",
+      info: "Internship for Coding.bn. Introduced to OpenCart framework.",
       position: "Intern",
       more_info:
         "Became an intern under the supervision of the general manager of Mumtaz Collections. I learned about how to become a freelancer in the web development industry, how to market, how to conduct business and so on.",
@@ -191,7 +191,7 @@ export const data = {
       image_url: "",
       year: "September 2021",
       git: "https://github.com/izzuddin23ali/instaloader-miniproject",
-      info: "",
+      info: "First venture into Python, automating Instaloader.",
       more_info:
         "A mini project using Python to read a csv, take a list of IG username, and using the username to download the biography of the profile, overwriting the empty biography cells of the aforementioned csv. The code also downloads the profile picture of the list of IG usernames into one folder.",
       framework: true,
@@ -209,12 +209,11 @@ export const data = {
       css: true,
       react: true,
       bootstrap: true,
-      more_info:
-        "This project was developed for the post-interview test set by Synapse for their web developer trainee position.",
+      info: "This project was developed for the post-interview test set by Synapse for their web developer trainee position.",
     },
     {
       id: 18,
-      category: "projects",
+      category: "featured",
       name: "Serious Women",
       year: "September 2021",
       git: "",
@@ -223,8 +222,7 @@ export const data = {
       html: true,
       css: true,
       bootstrap: true,
-      more_info:
-        "This project was developed for the post-interview test set by Hoco for their junior web developer position.",
+      info: "This project was developed for the post-interview test set by Hoco for their junior web developer position.",
     },
   ],
 };

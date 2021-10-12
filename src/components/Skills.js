@@ -1,8 +1,9 @@
 const Skills = () => {
   return (
     <>
-      <div className="col-md-6 col-12 mt-2">
-        <h5>Web Development Skills</h5>
+      <div className="col-md-6 col-12 mt-2 py-2 ">
+        <h4>Web Development Skills</h4>
+        <br></br>
         <div className="progress mb-3">
           <div className="progress-bar" style={{ width: "75%" }}>
             <div className="progress-text">
@@ -45,13 +46,14 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="col-md-6 col-12 mt-2">
-        <h5>Programming Languages</h5>
+      <div className="col-md-6 col-12 mt-2 py-2">
+        <h4>Programming Languages</h4>
+        <br></br>
         <div className="progress mb-3">
           <div className="progress-bar" style={{ width: "30%" }}>
             <div className="progress-text">
               <span>Python</span>
-              <span>30%</span>
+              <span class="d-none d-md-block">30%</span>
             </div>
           </div>
         </div>
@@ -62,7 +64,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="progress my-3">
+        <div className="progress mt-3">
           <div className="progress-bar" style={{ width: "15%" }}>
             <div className="progress-text">
               <span>C++</span>

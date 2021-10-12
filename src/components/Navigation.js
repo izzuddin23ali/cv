@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="row" id="header">
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg mx-auto">
         <button
           className="navbar-toggler"
           type="button"
@@ -16,8 +16,11 @@ const Navigation = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto">
+        <div
+          className="collapse navbar-collapse mx-auto"
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav mx-auto justify-content-center d-flex">
             <Link to={"/"}>
               <li className="nav-item">
                 <span className="nav-link">Home</span>

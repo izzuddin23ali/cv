@@ -1,28 +1,13 @@
 import Skills from "./Skills";
-import Biodata from "./Biodata";
-import { useState } from "react";
 
 const Bio = () => {
-  const [biodata, setBio] = useState(true);
-
-  const [skills, setSkills] = useState(false);
-
-  const bioActive = () => {
-    setBio(true);
-    setSkills(false);
-  };
-
-  const skillsActive = () => {
-    setSkills(true);
-    setBio(false);
-  };
-
   return (
     <>
-      <h2>About myself</h2>
-      <div className="row justify-content-between">
-        <div className="col-md-12 d-flex align-items-center">
+      <div className="row px-2 justify-content-between">
+        <div className="col-md-12 d-flex align-items-center mt-3">
           <article>
+            <h2>About myself</h2>
+
             <p>
               Hello and welcome to my website. This website is still quite
               barebone as I am still looking for stuff to add!
@@ -44,7 +29,7 @@ const Bio = () => {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row mt-3 px-2 bg-tertiary">
         <Skills />
       </div>
     </>

@@ -30,15 +30,9 @@ const Card = ({ data }) => {
 
             <h6 className="my-1">{data.position}</h6>
 
-            <h6 className="my-1">{data.year}</h6>
+            <h6 className="my-1 year">{data.year}</h6>
 
-            <p className="d-inline d-md-none">{data.info}</p>
-
-            <p className="d-none d-md-block">{data.more_info}</p>
-
-            <p className="d-none d-md-block">{data.second_info}</p>
-
-            <p className="d-none d-md-block">{data.third_info}</p>
+            <p>{data.info}</p>
 
             <div className="row">
               <div className="col-6">

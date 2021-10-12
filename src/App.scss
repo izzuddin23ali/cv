@@ -22,10 +22,10 @@ body {
 #header {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: $orange;
+  background-color: $blue;
 }
 nav * {
-  color: black;
+  color: white;
 }
 .container {
   padding-top: 10vh;
@@ -232,11 +232,20 @@ i.python {
 
 .nav-item {
   margin: 0 1.2rem;
+  font-size: 1.1rem;
+}
+
+.nav-item:hover {
+  color: lightsteelblue;
 }
 
 .section-header {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-header:first-child {
+  margin-top: 1rem;
 }
 
 .section-header i {

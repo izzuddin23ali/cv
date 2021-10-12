@@ -54,7 +54,7 @@ export const data = {
       name: "Tapau.com",
       image_url: "",
       year: "March - April 2017",
-      info: "Introduction to web development",
+      info: "My introduction to web development",
       more_info:
         "Tapau.com is a project that was done for the course Introduction to Web Development when I studied at UTB. Me and my partner develop the website using HTML, CSS, an AJAX template for the cart scriptings and PHP for the backend. My role in the project was the programming development of the website following my partner's design.",
       second_info: "It was never hosted to tapau.com",
@@ -149,7 +149,7 @@ export const data = {
       name: "CatSat",
       image_url: "",
       year: "June 2021",
-      info: "Pre-interview test for Synomus, done in React.",
+      info: "Pre-interview test for Synomus, my introduction to React.",
       link: "https://catsat23z.netlify.app",
       git: "https://github.com/izzuddin23ali/catsat",
       more_info:
@@ -200,7 +200,7 @@ export const data = {
     {
       id: 17,
       category: "projects",
-      name: "Synapse Interview Test",
+      name: "All About Me",
       year: "September 2021",
       git: "https://github.com/izzuddin23ali/synapse-jsonplaceholder-test",
       link: "https://synapse23z.netlify.app",
@@ -216,8 +216,8 @@ export const data = {
       category: "featured",
       name: "Serious Women",
       year: "September 2021",
-      git: "",
-      link: "",
+      git: "https://github.com/izzuddin23ali/seriouswomen",
+      link: "https://seriouswomen23z.netlify.app/",
       framework: true,
       html: true,
       css: true,

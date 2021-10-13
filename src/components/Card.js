@@ -23,7 +23,13 @@ const Card = ({ data }) => {
 
           <div className="title col-11 col-md-9 mx-auto">
             <h5 className="my-1">
-              <a href={data.link ? data.link : data.git}>{data.name}</a>
+              <a
+                href={data.link ? data.link : data.git}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data.name}
+              </a>
             </h5>
 
             <h6 className="my-1">{data.class}</h6>
@@ -40,7 +46,12 @@ const Card = ({ data }) => {
                   {data.link && (
                     <span class="d-block d-md-inline">
                       {data.link && (
-                        <a className="link mr-1" href={data.link}>
+                        <a
+                          className="link mr-1"
+                          href={data.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           hosted site
                         </a>
                       )}
@@ -52,7 +63,12 @@ const Card = ({ data }) => {
                   {data.git && (
                     <span class="d-block d-md-inline">
                       {data.git && (
-                        <a className="link mr-1" href={data.git}>
+                        <a
+                          className="link mr-1"
+                          href={data.git}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           git repo
                         </a>
                       )}

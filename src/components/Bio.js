@@ -8,7 +8,7 @@ const Bio = () => {
           <article>
             <h2>About myself</h2>
 
-            <p>
+            <p className="text-justify">
               Hello and welcome to my website. This website is still quite
               barebone as I am still looking for stuff to add!
             </p>
@@ -22,8 +22,7 @@ const Bio = () => {
             <p>
               Feel free to browse through my academic history, work experience
               and projects that I have made and do download my CV by clicking on
-              the 'Download CV' button on the left-size panel if you're
-              interested.
+              the 'Download CV' button if you're interested.
             </p>
           </article>
         </div>

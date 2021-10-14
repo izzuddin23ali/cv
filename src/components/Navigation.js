@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="row" id="header">
-      <nav className="navbar navbar-expand-lg mx-auto">
+      <nav className="navbar navbar-expand mx-auto">
         <button
           className="navbar-toggler"
           type="button"

@@ -92,28 +92,6 @@ h6 {
   text-align: justify;
 }
 
-/*mobile phone*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #header {
-    height: 12vh;
-  }
-
-  #hero {
-    text-align: center;
-    height: 6vh;
-  }
-
-  #content {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-  }
-
-  #framework i {
-    opacity: 40%;
-  }
-}
-
 button {
   border-radius: 10px;
   border: none;
@@ -133,7 +111,7 @@ button {
 }
 
 #framework i {
-  font-size: 32px;
+  font-size: 1.75rem;
   opacity: 0.5;
 }
 
@@ -250,9 +228,66 @@ i.python {
 
 .section-header i {
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .year {
   color: grey;
   font-size: 0.9rem;
+}
+
+/*mobile phone*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  #main {
+    margin-top: 1rem;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card:last-child {
+    margin-bottom: 15px;
+  }
+
+  .card .thumbnail {
+    height: 100px;
+    width: auto;
+  }
+
+  .card .thumbnail i {
+    font-size: 62px;
+  }
+
+  .card p {
+    text-align: unset;
+  }
+
+  #framework i {
+    font-size: 1.25rem;
+  }
+
+  .progress:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .nav-item {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-header i {
+    margin-right: 0.5rem;
+  }
 }

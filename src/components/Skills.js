@@ -24,7 +24,7 @@ const Skills = () => {
           <div className="progress-bar" style={{ width: "40%" }}>
             <div className="progress-text">
               <span>JavaScript</span>
-              <span>40%</span>
+              <span className="d-none d-lg-block">40%</span>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Skills = () => {
           <div className="progress-bar" style={{ width: "40%" }}>
             <div className="progress-text">
               <span>OpenCart</span>
-              <span>40%</span>
+              <span className="d-none d-lg-block">40%</span>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Skills = () => {
           <div className="progress-bar" style={{ width: "30%" }}>
             <div className="progress-text">
               <span>Python</span>
-              <span class="d-none d-md-block">30%</span>
+              <span class="d-none d-lg-block">30%</span>
             </div>
           </div>
         </div>
@@ -61,6 +61,7 @@ const Skills = () => {
           <div className="progress-bar" style={{ width: "20%" }}>
             <div className="progress-text">
               <span>C#</span>
+              <span class="d-none d-lg-block">20%</span>
             </div>
           </div>
         </div>
@@ -68,6 +69,7 @@ const Skills = () => {
           <div className="progress-bar" style={{ width: "15%" }}>
             <div className="progress-text">
               <span>C++</span>
+              <span class="d-none d-lg-block">15%</span>
             </div>
           </div>
         </div>

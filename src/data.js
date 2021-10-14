@@ -209,7 +209,7 @@ export const data = {
       css: true,
       react: true,
       bootstrap: true,
-      info: "This project was developed for the post-interview test set by Synapse for their web developer trainee position.",
+      info: "Pre-interview test set by Synapse for their web developer trainee position.",
     },
     {
       id: 18,
@@ -222,7 +222,7 @@ export const data = {
       html: true,
       css: true,
       bootstrap: true,
-      info: "This project was developed for the post-interview test set by Hoco for their junior web developer position.",
+      info: "Post-interview test set by Hoco for their junior web developer position.",
     },
   ],
 };

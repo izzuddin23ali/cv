@@ -8,20 +8,24 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const Main = () => {
   return (
     <Router>
-      <div className="col-md-8 overflow-hidden" id="main">
-        <Navigation />
+      <div className="col-md-8">
+        <div className="row">
+          <div className="col-10 mx-auto overflow-hidden" id="main">
+            <Navigation />
 
-        <div className="row mt-2" id="content">
-          <div className="col-12 mx-auto">
-            <Switch>
-              <Route path="/" exact component={Bio} />
-              <Route path="/resume">
-                <Resume data={data} />
-              </Route>
-              <Route path="/portfolio">
-                <Portfolio data={data} />
-              </Route>
-            </Switch>
+            <div className="row mt-2" id="content">
+              <div className="col-12 mx-auto">
+                <Switch>
+                  <Route path="/" exact component={Bio} />
+                  <Route path="/resume">
+                    <Resume data={data} />
+                  </Route>
+                  <Route path="/portfolio">
+                    <Portfolio data={data} />
+                  </Route>
+                </Switch>
+              </div>
+            </div>
           </div>
         </div>
       </div>

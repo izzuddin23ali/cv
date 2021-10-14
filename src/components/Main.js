@@ -10,7 +10,10 @@ const Main = () => {
     <Router>
       <div className="col-md-8">
         <div className="row">
-          <div className="col-10 mx-auto overflow-hidden" id="main">
+          <div
+            className="col-10 col-md-11 col-lg-10 mx-auto overflow-hidden"
+            id="main"
+          >
             <Navigation />
 
             <div className="row mt-2" id="content">

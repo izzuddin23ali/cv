@@ -8,21 +8,13 @@ const Bio = () => {
           <article>
             <h2>About myself</h2>
 
-            <p className="text-justify">
-              Hello and welcome to my website. This website is still quite
-              barebone as I am still looking for stuff to add!
-            </p>
-
             <p>
-              This website is me practicing my react skills and learning how to
-              use react-router-dom, and also subsequently try to experiment and
-              get out of my comfort zone in the designing aspect.
-            </p>
-
-            <p>
-              Feel free to browse through my academic history, work experience
-              and projects that I have made and do download my CV by clicking on
-              the 'Download CV' button if you're interested.
+              A business management graduate with basic education in information
+              technology, have experience in the IT department interning at
+              Institut Perkhidmatan Awam and are capable of front-end website
+              development. Also experienced and willing to work in labour works
+              from time working for Starlodge Hotel. Able to work without
+              supervision after training and acclimatization.
             </p>
           </article>
         </div>

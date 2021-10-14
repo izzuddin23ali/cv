@@ -60,6 +60,8 @@ const Card = ({ data }) => {
                     </span>
                   )}
 
+                  <br className="d-none d-md-block d-lg-none" />
+
                   {data.git && (
                     <span class="d-block d-md-inline">
                       {data.git && (

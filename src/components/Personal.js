@@ -2,7 +2,10 @@ const Personal = () => {
   return (
     <div className="col-md-4 col-sm-12 col-12">
       <div className="row">
-        <div className="col-10 mx-auto overflow-hidden" id="personal">
+        <div
+          className="col-10 col-md-12 col-lg-10 mx-auto overflow-hidden"
+          id="personal"
+        >
           <div className="row">
             <div className="col-10 mx-auto mt-4" id="portrait">
               <img className="mx-auto" src="images/yak.png" alt="yak" />
@@ -33,7 +36,7 @@ const Personal = () => {
           <div className="row py-md-2 py-0 bg-tertiary">
             <div className="col-12 mb-md-2 mx-auto text-center">
               <div className="row d-none d-md-flex">
-                <div className="col-10 mx-auto text-left">
+                <div className="col-10 col-md-12 col-lg-10 mx-auto text-left">
                   <ul>
                     <li title="email">
                       <i class="fas fa-at"></i>

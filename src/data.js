@@ -224,5 +224,16 @@ export const data = {
       bootstrap: true,
       info: "Post-interview test set by Hoco for their junior web developer position.",
     },
+    {
+      id: 19,
+      category: "experience",
+      current: true,
+      name: "Hoco Agency",
+      year: "October 2021 - current employment",
+      position: "Junior Web Developer",
+      info: "",
+      image_url:
+        "https://scontent.fbwn2-1.fna.fbcdn.net/v/t1.18169-9/22489969_831569313669424_2865329104615060879_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=XWdXK9inrhUAX9aiw98&_nc_ht=scontent.fbwn2-1.fna&oh=172424a101458ea5f8f977fa5387be70&oe=6194CFA3",
+    },
   ],
 };

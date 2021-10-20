@@ -14,7 +14,8 @@ const Bio = () => {
               Institut Perkhidmatan Awam and are capable of front-end website
               development. Also experienced and willing to work in labour works
               from time working for Starlodge Hotel. Able to work without
-              supervision after training and acclimatization.
+              supervision after training and acclimatization. Currently working
+              at Hoco.
             </p>
           </article>
         </div>

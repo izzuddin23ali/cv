@@ -236,6 +236,11 @@ i.python {
   font-size: 0.9rem;
 }
 
+.titleName {
+  border-bottom: 1px solid black;
+  font-style: bold;
+}
+
 /*mobile phone*/
 
 @media (min-width: 320px) and (max-width: 480px) {

@@ -7,9 +7,7 @@ const Personal = () => {
           id="personal"
         >
           <div className="row">
-            <div className="col-10 mx-auto mt-4" id="portrait">
-              <img className="mx-auto" src="images/yak.png" alt="yak" />
-            </div>
+            <div className="col-10 mx-auto mt-4" id="portrait"></div>
           </div>
           <div className="row">
             <div className="col-12 mt-2 mx-auto text-center">

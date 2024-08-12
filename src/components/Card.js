@@ -5,12 +5,16 @@ const Card = ({ data }) => {
         <div className="row">
           <div
             className="thumbnail d-flex justify-content-center align-items-center col-10 col-md-3 mx-auto"
-            style={{ backgroundImage: "url(" + data.image_url + ")" }}
+            /*style={{ backgroundImage: "url(" + data.image_url + ")" }}*/
           >
+            {data.image_url && <img src={data.image_url} alt="" />}
+
             {!data.image_url &&
               (data.framework ? (
                 data.react ? (
                   <i className="fab fa-react react"></i>
+                ) : data.wordpress ? (
+                  <i className="fa-brands fa-wordpress wordpress"></i>
                 ) : data.html ? (
                   <i className="fab fa-html5 html"></i>
                 ) : (
@@ -22,7 +26,7 @@ const Card = ({ data }) => {
           </div>
 
           <div className="title col-11 col-md-9 mx-auto">
-            <h5 className="my-1">
+            <h4 className="my-1 titleName">
               <a
                 href={data.link ? data.link : data.git}
                 target="_blank"
@@ -30,7 +34,7 @@ const Card = ({ data }) => {
               >
                 {data.name}
               </a>
-            </h5>
+            </h4>
 
             <h6 className="my-1">{data.class}</h6>
 
@@ -102,6 +106,10 @@ const Card = ({ data }) => {
 
             {data.python && (
               <i title="python" className="fab fa-python mx-1"></i>
+            )}
+
+            {data.wordpress && (
+              <i title="wordpress" className="fa fa-wordpress mx-1"></i>
             )}
           </div>
         )}

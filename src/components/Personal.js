@@ -19,7 +19,7 @@ const Personal = () => {
               </h6>
               <div className="row mt-3 mb-md-3 mb-2">
                 <div className="col-6 mx-auto d-flex justify-content-around">
-                  <a href="https://www.instagram.com/ugly23z/">
+                  <a href="https://www.instagram.com/blck23z/">
                     <i class="fab fa-instagram"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/izzuddin-ali-575a18211/">

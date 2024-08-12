@@ -79,6 +79,13 @@ h6 {
   font-size: 62px;
 }
 
+.card .thumbnail img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: auto;
+}
+
 .card h5,
 .card h6 {
   text-align: left;
@@ -125,6 +132,10 @@ i.html {
 
 i.python {
   color: #4b8bbe;
+}
+
+i.wordpress {
+  color: #21759b;
 }
 
 .progress {

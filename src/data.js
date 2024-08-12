@@ -164,7 +164,6 @@ export const data = {
       id: 14,
       category: "training",
       name: "Coding.bn",
-      image_url: "https://codingbn.com/creative-startup/img/CBN1.png",
       year: "March - September 2021",
       course: "",
       class: "Vocational Training",
@@ -176,8 +175,6 @@ export const data = {
       id: 15,
       category: "experience",
       name: "Mumtaz Collections",
-      image_url:
-        "https://www.mumtazcollections.com/image/catalog/Mumtaz/Logo/mumtaz-logo-150x150.png",
       year: "July - September 2021 (3 months)",
       info: "Internship for Coding.bn. Introduced to OpenCart framework.",
       position: "Intern",
@@ -232,8 +229,6 @@ export const data = {
       year: "October 2021 - current employment",
       position: "Junior Web Developer",
       info: "",
-      image_url:
-        "https://scontent.fbwn2-1.fna.fbcdn.net/v/t1.18169-9/22489969_831569313669424_2865329104615060879_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=XWdXK9inrhUAX9aiw98&_nc_ht=scontent.fbwn2-1.fna&oh=172424a101458ea5f8f977fa5387be70&oe=6194CFA3",
     },
     {
       id: 20,

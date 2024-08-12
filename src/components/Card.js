@@ -3,10 +3,7 @@ const Card = ({ data }) => {
     <>
       <div className="card col-12" key={data.id.toString()}>
         <div className="row">
-          <div
-            className="thumbnail d-flex justify-content-center align-items-center col-10 col-md-3 mx-auto"
-            /*style={{ backgroundImage: "url(" + data.image_url + ")" }}*/
-          >
+          <div className="thumbnail d-flex justify-content-center align-items-center col-10 col-md-3 mx-auto">
             {data.image_url && <img src={data.image_url} alt="" />}
 
             {!data.image_url &&

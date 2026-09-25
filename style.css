@@ -1,0 +1,136 @@
+:root {
+  --bg: #090c1c; /* page background */
+  --panel: #111633; /* cards, terminal box, chips */
+  --line: #26306a; /* borders, timeline, dividers */
+  --text: #e6eaff; /* main text */
+  --mute: #9aa4d6; /* secondary text */
+  --cyan: #22e5ff; /* primary accent: brand, links, tags, hover */
+  --mag: #ff2e9a; /* secondary accent: featured card, subtitles, main button */
+}
+
+/* Body text */
+
+/* Headings, nav, buttons, tags, terminal box, timeline dates */
+
+body {
+  background-color: var(--bg) !important;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-image:
+    linear-gradient(rgba(34, 229, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 229, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+*,
+button {
+  color: var(--text);
+}
+
+#blue23zcv .text-muted {
+  color: var(--mute) !important;
+}
+
+#blue23zcv .text-blue,
+#blue23zcv .text-blue * {
+  color: var(--cyan);
+}
+
+.text-magenta {
+  color: var(--mag);
+}
+
+.text-blue-bg-magenta {
+  color: var(--cyan);
+}
+
+.border-magenta {
+  border: 1px solid var(--mag);
+  background-color: var(--panel);
+}
+
+.border-muted {
+  border: 1px solid var(--line);
+  background-color: var(--panel);
+}
+
+.btn {
+  border-radius: 0 12px 0 12px !important;
+  corner-top-right-shape: bevel;
+  corner-bottom-left-shape: bevel;
+}
+
+.btn.btn-blue,
+.btn.btn-magenta:hover {
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  transition: all 0.5s ease;
+}
+
+.btn.btn-magenta,
+.btn.btn-blue:hover {
+  color: var(--text);
+  background-color: var(--mag);
+  transition: all 0.5s ease;
+}
+
+.panel {
+  background-color: var(--panel);
+  padding: 20px !important;
+}
+
+.panel.container {
+  margin-left: unset;
+  margin-right: unset;
+}
+
+.panel p {
+  margin-bottom: 0;
+}
+
+.panel > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.text-card {
+  background-color: var(--panel);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
+body > main > div > .row {
+  padding: 40px 0;
+}
+
+body > main > div > .row:not(:first-child) {
+  border-top: 1px solid var(--line);
+}
+
+#blue23zcv .row > *:not(.panel) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav {
+  font-family: "Courier New", ui-monospace, monospace;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.single-container .content {
+  margin: 20px 0;
+}
+
+footer {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+footer p {
+  margin: 0;
+}
+
+#work-container .panel:not(:last-child) {
+  margin-bottom: 20px;
+}

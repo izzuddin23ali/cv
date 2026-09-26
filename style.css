@@ -22,7 +22,8 @@ body {
 }
 
 *,
-button {
+button,
+.text-white {
   color: var(--text);
 }
 
@@ -121,6 +122,15 @@ nav {
   border-bottom: 1px solid var(--line);
 }
 
+nav a {
+  transition: all 0.5s ease;
+}
+
+#blue23zcv nav a.text-muted:hover {
+  color: var(--mag) !important;
+  transition: all 0.5s ease;
+}
+
 .single-container .content {
   margin: 20px 0;
 }
@@ -143,12 +153,25 @@ footer p {
   margin-bottom: 20px;
 }
 
+.grid-panels {
+  display: grid;
+  gap: 0.5rem;
+}
+
+#work-container .grid-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#experience-container .grid-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 #contact-container a,
 #hero a {
   margin-right: 8px;
 }
 
-#experience-container .content > div {
+#experience-container .content > div.list-container {
   margin-left: 20px;
 }
 
@@ -162,6 +185,10 @@ footer p {
   margin-bottom: 40px;
 }
 
+#experience-container #master-ul > li {
+  margin-bottom: 20px;
+}
+
 #experience-container li {
   list-style: none;
   position: relative;
@@ -170,7 +197,12 @@ footer p {
 }
 
 #experience-container li::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: -10px;
   top: 0px;
+  position: absolute;
 }
 
 #experience-container #master ul > li::before {
@@ -178,23 +210,13 @@ footer p {
 }
 
 #experience-container li:first-child::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: -10px;
   color: var(--mag);
   background-color: var(--mag);
   border: 1px solid var(--mag);
-  position: absolute;
 }
 
 #experience-container li:not(:first-child)::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: -10px;
   color: var(--mag);
   background-color: var(--bg);
-  border: 1px solid var(--cyan);
-  position: absolute;
+  border: 2px solid var(--cyan);
 }

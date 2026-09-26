@@ -41,6 +41,7 @@ button {
 
 .text-blue-bg-magenta {
   color: var(--cyan);
+  text-shadow: var(--mag) 2px 2px;
 }
 
 .border-magenta {
@@ -62,6 +63,7 @@ button {
 .btn.btn-blue,
 .btn.btn-magenta:hover {
   color: var(--cyan);
+  background-color: var(--bg);
   border: 1px solid var(--cyan);
   transition: all 0.5s ease;
 }
@@ -70,6 +72,7 @@ button {
 .btn.btn-blue:hover {
   color: var(--text);
   background-color: var(--mag);
+  border: 1px solid var(--mag);
   transition: all 0.5s ease;
 }
 
@@ -125,12 +128,73 @@ nav {
 footer {
   padding: 20px 0;
   border-top: 1px solid var(--line);
+  background-color: var(--bg);
 }
 
 footer p {
   margin: 0;
 }
 
-#work-container .panel:not(:last-child) {
+#hero {
+  padding: 80px 0;
+}
+
+#work-container .featured {
   margin-bottom: 20px;
+}
+
+#contact-container a,
+#hero a {
+  margin-right: 8px;
+}
+
+#experience-container .content > div {
+  margin-left: 20px;
+}
+
+#experience-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+#experience-container #master-ul {
+  border-left: 1px solid var(--line);
+  margin-bottom: 40px;
+}
+
+#experience-container li {
+  list-style: none;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+}
+
+#experience-container li::before {
+  top: 0px;
+}
+
+#experience-container #master ul > li::before {
+  top: 0px;
+}
+
+#experience-container li:first-child::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: -10px;
+  color: var(--mag);
+  background-color: var(--mag);
+  border: 1px solid var(--mag);
+  position: absolute;
+}
+
+#experience-container li:not(:first-child)::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: -10px;
+  color: var(--mag);
+  background-color: var(--bg);
+  border: 1px solid var(--cyan);
+  position: absolute;
 }

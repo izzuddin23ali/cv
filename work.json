@@ -1,0 +1,161 @@
+[
+  {
+    "name": "Bridge ERP-Lite",
+    "featured": true,
+    "description": [
+      "<p><strong>Problem:</strong> a company tracked leave, tenders and raising requisition form/purchase order.</p>",
+      "<p><strong>Built:</strong> an ERP-lite with leave application and procurement modules built on customized WordPress platform.</p>",
+      "<p><strong>Outcome:</strong> bridging between expiring subcription of ERP system while finding the best solution for the future.<p>"
+    ],
+    "stack": ["WordPress", "PHP"],
+    "work_type": "Internal Tool",
+    "thumbnail": "",
+    "logo": ""
+  },
+  {
+    "name": "ApaSaja",
+    "featured": true,
+    "description": "<p>A tagged archive of local shops, with a randomizer that picks where to eat for when you cannot decide.</p>",
+    "stack": ["WordPress", "PHP"],
+    "work_type": "Internal Site",
+    "thumbnail": "",
+    "logo": ""
+  },
+  {
+    "name": "HSky Trading Stock Tracking",
+    "featured": true,
+    "description": "",
+    "stack": ["Wordpress", "PHP"],
+    "work_type": "Client's Tool",
+    "thumbnail": "",
+    "logo": ""
+  },
+  {
+    "name": "Crit eSports",
+    "featured": true,
+    "description": "",
+    "stack": ["WordPress", "PHP"],
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "CRIT_Esports.png"
+  },
+  {
+    "name": "Ampro Clash Series by Crit Esports",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "ACS.png"
+  },
+  {
+    "name": "ACS EduTour",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "ACS_Edutour.png"
+  },
+  {
+    "name": "Alfred Insights & Consultation",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Alfred.png"
+  },
+  {
+    "name": "Burgers and Grills",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Burgers_and_Grills.png"
+  },
+  {
+    "name": "Esports Association of Brunei",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Esports_Association_of_Brunei.png"
+  },
+  {
+    "name": "H22 Workshop",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "H22_Workshop.png"
+  },
+  {
+    "name": "HOCO Agency",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "HOCO_Agency.png"
+  },
+  {
+    "name": "Hotel Gateway Express",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Hotel_Gateway_Express.png"
+  },
+  {
+    "name": "HSky Trading",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "HSKY_Trading.png"
+  },
+  {
+    "name": "Joffren Omar",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Joffren_Omar_Co.png"
+  },
+  {
+    "name": "Lamitech",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Lamitech.png"
+  },
+  {
+    "name": "Little Kingdom Petting Zoo",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Little_Kingdom_Petting_Zoo.png"
+  },
+  {
+    "name": "Massutera Engineering",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "Massutera_Engineering.png"
+  },
+  {
+    "name": "MutuMoto",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "MutuMoto.png"
+  },
+  {
+    "name": "Plaza Sutera Biru Hotel",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "PSB_Hotel.png"
+  },
+  {
+    "name": "PTT Engineering",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "PTT_Engineering.png"
+  },
+  {
+    "name": "V Plaza Hotel",
+    "featured": false,
+    "work_type": "Client's Site",
+    "thumbnail": "",
+    "logo": "V_Plaza_Hotel.png"
+  }
+]

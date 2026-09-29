@@ -162,6 +162,50 @@ footer p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+#work-container .content > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#work-container .content > div:not(:first-child) {
+  margin-top: 20px;
+}
+
+#non-featured-container {
+  display: none;
+  color: var(--mute);
+}
+
+#non-featured-container p {
+  font-weight: 100;
+}
+
+#non-featured-container .grid-panels {
+  gap: 1.5rem;
+}
+
+#non-featured-container .content-container {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+#non-featured-container .image-panel {
+  padding: 12px;
+  background-color: #fff;
+}
+
+#non-featured-container img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+#non-featured-container .panel > div {
+  margin-bottom: 0;
+}
+
+#show-non-featured-additional {
+  display: none;
+}
+
 #experience-container .grid-panels {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }

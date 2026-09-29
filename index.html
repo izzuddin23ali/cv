@@ -41,7 +41,13 @@
               >
             </li>
           </ul>
-          <button class="btn btn-blue" id="download-cv">Download CV</button>
+          <a
+            class="btn btn-blue"
+            id="download-cv"
+            href="Izzuddin_Ali_CV.pdf"
+            target="_blank"
+            >Download CV</a
+          >
         </div>
       </nav>
     </header>
@@ -94,26 +100,18 @@
           <h4>Work</h4>
           <h6 class="text-magenta">// SYSTEMS I HAVE SHIPPED</h6>
           <div class="content">
-            <div class="col-12 featured border-magenta panel">
+            <div
+              class="col-12 featured border-magenta panel"
+              id="main-featured-work-panel"
+            >
               <div class="row m-0">
                 <div class="col-lg-6">
-                  <p class="text-2 text-blue">FEATURED | INTERNAL TOOL</p>
-                  <h6>Bridge ERP-lite</h6>
-                  <p>
-                    <strong>Problem:</strong> a company tracked leave, tenders
-                    and purchase order/requisition form
+                  <p class="text-2 text-blue">
+                    FEATURED | <span class="type"></span>
                   </p>
-                  <p>
-                    <strong>Built:</strong> an ERP-lite with leave application
-                    and procurement modules built on customized WordPress
-                    platform.
-                  </p>
-                  <p>
-                    <strong>Outcome:</strong> bridging between expiring
-                    subscription of ERP system while finding the best solution
-                    for the future.
-                  </p>
-                  <p class="text-blue">WordPress | PHP</p>
+                  <h6 class="title"></h6>
+                  <div class="description-container"></div>
+                  <p class="text-blue stack-container"></p>
                 </div>
                 <div class="col-lg-6">
                   <div class="panel border-muted"></div>
@@ -122,7 +120,7 @@
             </div>
             <div class="col-12" style="max-width: 100%">
               <div class="row m-0 grid-panels">
-                <div class="col border-muted panel">
+                <div class="col border-muted panel work-panel">
                   <p class="text-2 text-blue">FEATURED | INTERNAL TOOL</p>
                   <h6>Bridge ERP-lite</h6>
                   <p>
@@ -151,6 +149,28 @@
                 </div>
               </div>
             </div>
+            <button
+              class="btn btn-blue show-non-featured"
+              id="show-non-featured"
+            >
+              Show More Work
+            </button>
+            <div class="col-12 container" id="non-featured-container">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Non-featured Work</h4>
+                </div>
+              </div>
+              <div
+                class="content-container row grid-panels panel border-muted"
+              ></div>
+            </div>
+            <button
+              class="btn btn-blue show-non-featured"
+              id="show-non-featured-additional"
+            >
+              Collapse Non-featured Work
+            </button>
           </div>
         </div>
         <div class="row single-container" id="skills-container">
@@ -284,7 +304,9 @@
             <a class="btn btn-magenta" href="#">Email Me</a>
             <a class="btn btn-blue" href="#">GitHub</a>
             <a class="btn btn-blue" href="#">LinkedIn</a>
-            <a class="btn btn-blue" href="#">Download CV</a>
+            <a class="btn btn-blue" href="Izzuddin_Ali_CV.pdf" target="_blank"
+              >Download CV</a
+            >
           </div>
         </div>
       </div>

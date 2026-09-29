@@ -35,7 +35,7 @@ jQuery(function ($) {
         } else {
           let img = work.logo != "" ? work.logo : "placeholder.webp";
           let element = "<div class='col'><div class='image-panel'>";
-          element += "<img src='/img/" + img + "'/></div>";
+          element += "<img src='img/" + img + "'/></div>";
           element += "<p class='text-center'>" + title + "</p>";
           element += "</div>";
           $("#non-featured-container .content-container").append(element);

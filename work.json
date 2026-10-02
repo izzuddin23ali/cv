@@ -14,12 +14,12 @@
   },
   {
     "name": "ApaSaja",
-    "featured": true,
+    "featured": false,
     "description": "<p>A tagged archive of local shops, with a randomizer that picks where to eat for when you cannot decide.</p>",
     "stack": ["WordPress", "PHP"],
     "work_type": "Internal Site",
     "thumbnail": "",
-    "logo": ""
+    "logo": "ApaSaja.png"
   },
   {
     "name": "HSky Trading Stock Tracking",
